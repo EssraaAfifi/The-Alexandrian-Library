@@ -5,7 +5,7 @@
 //Moving Wheels
 void Vroom(int rspeed, int lspeed, int timer)
 {//Begin Void
-	mav(0, rspeed);
+	mav(0, rspeed); //FUN FACT: MAV stand for 'Move at Velocity'
 	mav(3, lspeed);
 	msleep(timer);
 }//End Void
