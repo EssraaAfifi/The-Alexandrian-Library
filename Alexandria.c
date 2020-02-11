@@ -37,13 +37,24 @@ void Slapper(int servonum, int angle)
 	disable_servos();
 }//End
 
-//Move Father's Arm
+//Lower the Line
 void Im(int count, int speed)
 {//Begin
 	cmpc(1);
 	while(gmpc(1)<count)
 	{//Start while
-		motor(1,60);
+		motor(1,speed);
+		msleep(500);
+	}//End While
+}//End
+
+//Pull the line
+void Imnot(int count2, int speed2)
+{//Begin
+	cmpc(1);
+	while(gmpc(1)>count2)
+	{//Start while
+		motor(1,speed2);
 		msleep(500);
 	}//End While
 }//End
