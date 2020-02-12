@@ -18,13 +18,13 @@ void Raven(int counter, int black)
 	{//Begin While
 		while (analog(1)>black)
 		{//Begin While 2
-			Vroom(500,1000,100);//turn left if black
-			printf("right\n");
+			Vroom(1000,500,100);//turn left if black
+			printf("left\n");
 		}//End While 2
 		while(analog(1)<black)
 		{//start while 3
-			Vroom(1000,500,100);
-			printf("left\n");
+			Vroom(500,1000,100);
+			printf("right\n");
 		}//end while 3
 	}//End While
 }//End Void
