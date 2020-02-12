@@ -2,4 +2,5 @@
 void Vroom();
 void Slapper();
 void Raven();
-void Im();
+void Throw();
+void Catch();
