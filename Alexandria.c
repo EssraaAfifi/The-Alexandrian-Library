@@ -37,8 +37,8 @@ void Slapper(int servonum, int angle)
 	disable_servos();
 }//End
 
-//Lower the Line
-void Im(int count, int speed)
+//Move the Arm of Fath
+void Throw(int count, int speed)
 {//Begin
 	cmpc(1);
 	while(gmpc(1)<count)
@@ -49,7 +49,7 @@ void Im(int count, int speed)
 }//End
 
 //Pull the line
-void Imnot(int count2, int speed2)
+void Catch(int count2, int speed2)
 {//Begin
 	cmpc(1);
 	while(gmpc(1)>count2)
